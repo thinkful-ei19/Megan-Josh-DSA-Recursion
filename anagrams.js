@@ -18,7 +18,9 @@ function anagram(string) {
     for (let subPermutation of anagram(stringMinusThatCharAtI))
       permutations.push(char + subPermutation);
 
-    //got help on this part (18-19): need to go over
+    //iterating over the left over parts of the original string sent 
+    //into the loop minus the character taken out at the original for loop
+    //makes those sub groupings go through the same thing until every character has been rearranged.
 
   }
   return permutations;
